@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+	font-family: "Blackletter";
+	src: url("fonts/CloisterBlack.ttf");
+}
+
+body {
+	background-color: #ccccb3;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 15px;
+	font-family: "Blackletter";
+}
+
+li {
+	border: 1px solid black;
+	border-left: 10px solid #000066;
+	background-color: #bfbfbf;
+	padding: 10px;
+	list-style-type: none;
+}
+
+a {
+	
+}

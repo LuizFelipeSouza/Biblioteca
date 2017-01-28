@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background: url("http://www.travelvalley.nl/uploads/headers/klementinum-praag-1.jpg") no-repeat;
+	background-size: cover;
+}
+
+form {
+	color: #111111;
+	border-style: hidden;
+	margin-bottom: 25px;
+	background-color: #d1b3ff;
+	width: 180px;
+}
+
+input {
+	margin-left: 10px;
+}
