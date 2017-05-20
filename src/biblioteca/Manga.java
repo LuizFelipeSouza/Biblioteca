@@ -2,7 +2,7 @@ package biblioteca;
 
 public class Manga extends Livro {
 	
-	/* Pesquisar estruturas de dados para substituir a array de coleção de mangás. Salvar esta versão */
+	// TODO Pesquisar estruturas de dados para substituir a array de coleção de mangás. Salvar esta versão
 	
 	private int numero;
 	private static Manga[] colecao = new Manga[1]; 
@@ -26,22 +26,19 @@ public class Manga extends Livro {
 		adicionar(this);
 	}
 	
-	// Métodos 
-	@Override
-	public void mostrarInformacoes() {
-		super.mostrarInformacoes();
-		System.out.println("Número: " + this.numero);
-	}
-	
+	// Métodos
 	@Override
 	public String toString() {
+		super.toString();
 		String info = this.getTitulo() + " " + this.getNumero();
 		return info;
 	}
 	
-	/** Adiciona um novo volume do mangá à array de mangás dessa coleção
-	 * @param: Um novo volume de mangá
-	 * @return: void
+	/** 
+	 * Adiciona um novo volume do mangá à array de mangás dessa coleção
+	 * 
+	 * @param volume Volume de mangá a ser adicionado à coleção
+	 * @return void
 	 */
 	private void adicionar(Manga volume) {
 		// Chama o método adicionar() da classe livro. Adiciona ao acervo geral
