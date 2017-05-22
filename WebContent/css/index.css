@@ -1,28 +1,67 @@
 @CHARSET "ISO-8859-1";
 
 @font-face {
-	font-family: "Blackletter";
-	src: url("fonts/CloisterBlack.ttf");
+	font-family: Blackletter;
+	src: url(../fonts/CloisterBlack.ttf);
 }
 
 body {
-	background-color: #ccccb3;
+	/* background-color: #ccccb3; */
+	background-color: #bfbfbf;
 }
+
+/* Barra de navegação */
+nav {
+	width: 100px;
+	float: left;
+}
+nav ul {
+	/* Retira os pontos*/
+	list-style-type: none;
+	/* Remove a margem e preenchimento padrão do navegador*/
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+nav li a {
+	/* Torna toda a área do elemento clicável; não apenas o texto */
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #555;
+	color: white;
+}
+/* Fim da estilização da barra de navegação */
 
 h1 {
+	font-family: Blackletter;
+	color: #d9d9d9;
+	display: block;
 	text-align: center;
-	padding-bottom: 15px;
-	font-family: "Blackletter";
+	padding: 15px;
+	background-color: #4d4d4d;
+	border-radius: 10px;
 }
 
-li {
-	border: 1px solid black;
-	border-left: 10px solid #000066;
-	background-color: #bfbfbf;
+table, th, td {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	padding: 10px;
-	list-style-type: none;
 }
 
-a {
-	
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #d9d9d9;
 }

@@ -19,9 +19,24 @@
 
 	<body>
 		<h1>Acervo</h1>
+		<!-- Inicio do menu de navegação -->
+		<nav>
+			<ul>
+				<li><a href="adicionarLivro.html" id="adicionar">Adicionar</a></li>
+				<li><a href="#">Buscar</a></li>
+				<li><a href="#">Remover</a></li>
+			</ul>
+		</nav>
+		<!-- Fim do menu de navegação-->
 		<!-- Criamos uma tabela com as informações geradas pelo for -->
 		<%-- utilizamos <%= %> para passar dados --%>
 			<table>
+				<th>Título</th>
+				<th>Autor</th>
+				<th>Gênero</th>
+				<th>Editora</th>
+				<th>Ano</th>
+				<th>ISBN</th>
 				<% LivroDAO dao = new LivroDAO();
 					Collection<Livro> livros = dao.getLista();
 					for (Livro livro : livros) {
@@ -48,6 +63,5 @@
 				</tr>
 					<% } %>
 			</table>
-			<a href="adicionarLivro.html">Adicionar</a>
 		</body>
 </html>
