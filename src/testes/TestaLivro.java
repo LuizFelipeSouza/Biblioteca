@@ -1,16 +1,16 @@
 package testes;
 
 import biblioteca.Livro;
-import biblioteca.Manga;
+import biblioteca.Periodico;
 
 public class TestaLivro {
 
 	public static void main(String[] args) {
-		Livro neuromancer = new Livro("Neuromancer", "William Gibson", "Ficção Científica", 1984, "Aleph");
-		Livro count_zero = new Livro("Count Zero", "William Gibson", "Ficcção Científica", "Aleph");
-		Livro mona_lisa_overdrive = new Livro("Mona Lisa Overdrive", "William Gibson", "Ficção Científica", "Aleph");
+		Livro neuromancer = new Livro("Neuromancer", "William Gibson", "Ficï¿½ï¿½o Cientï¿½fica", 1984, "Aleph");
+		Livro count_zero = new Livro("Count Zero", "William Gibson", "Ficcï¿½ï¿½o Cientï¿½fica", "Aleph");
+		Livro mona_lisa_overdrive = new Livro("Mona Lisa Overdrive", "William Gibson", "Ficï¿½ï¿½o Cientï¿½fica", "Aleph");
 
-		Manga clay20 = new Manga("Claymore", 20, "Yogihiro Nagi", "Ação", "Panini");
+		Periodico clay20 = new Periodico("Claymore", 20, "Yogihiro Nagi", "Aï¿½ï¿½o", "Panini");
 
 		System.out.println(Livro.exibirAcervo());
 

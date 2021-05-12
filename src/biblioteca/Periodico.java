@@ -1,32 +1,32 @@
 package biblioteca;
 
-public class Manga extends Livro {
+public class Periodico extends Livro {
 	
-	// TODO Pesquisar estruturas de dados para substituir a array de coleção de mangás. Salvar esta versão
+	// TODO Pesquisar estruturas de dados para substituir a array de coleï¿½ï¿½o de mangï¿½s. Salvar esta versï¿½o
 	
 	private int numero;
-	private static Manga[] colecao = new Manga[1]; 
+	private static Periodico[] colecao = new Periodico[1];
 	
 	// Construtores 
-	public Manga(String titulo, int numero, String autor) {
+	public Periodico(String titulo, int numero, String autor) {
 		super(titulo, autor);
 		this.setNumero(numero);
 		adicionar(this);
 	}
 	
-	public Manga(String titulo, int numero, String autor, String genero, String editora) {
+	public Periodico(String titulo, int numero, String autor, String genero, String editora) {
 		super(titulo, autor, genero, editora);
 		this.setNumero(numero);
 		adicionar(this);
 	}
 	
-	public Manga(String titulo, int numero, String autor, String genero, int ano, String editora) {
+	public Periodico(String titulo, int numero, String autor, String genero, int ano, String editora) {
 		super(titulo, autor, genero, ano, editora);
 		this.numero = numero;
 		adicionar(this);
 	}
 	
-	// Métodos
+	// Mï¿½todos
 	@Override
 	public String toString() {
 		super.toString();
@@ -35,13 +35,13 @@ public class Manga extends Livro {
 	}
 	
 	/** 
-	 * Adiciona um novo volume do mangá à array de mangás dessa coleção
+	 * Adiciona um novo volume do mangï¿½ ï¿½ array de mangï¿½s dessa coleï¿½ï¿½o
 	 * 
-	 * @param volume Volume de mangá a ser adicionado à coleção
+	 * @param volume Volume de mangï¿½ a ser adicionado ï¿½ coleï¿½ï¿½o
 	 * @return void
 	 */
-	private void adicionar(Manga volume) {
-		// Chama o método adicionar() da classe livro. Adiciona ao acervo geral
+	private void adicionar(Periodico volume) {
+		// Chama o mï¿½todo adicionar() da classe livro. Adiciona ao acervo geral
 		super.adicionar(volume);
 		
 		if (colecao[0] == null) {
@@ -50,18 +50,18 @@ public class Manga extends Livro {
 	
 		else {
 			int tamanho = colecao.length + 1;
-			Manga[] aux = new Manga[tamanho];
+			Periodico[] aux = new Periodico[tamanho];
 			aux[tamanho-1] = volume;
 			for (int i = 0; i < tamanho-1; i++) {
 				aux[i] = colecao[i];
 			}
-			Manga.colecao = aux;
+			Periodico.colecao = aux;
 		}
 	}
 		
 	public static void mostrarColecao() {
-		for (Manga manga : colecao) {
-			System.out.println(manga);
+		for (Periodico periodico : colecao) {
+			System.out.println(periodico);
 		}
 	}
 
